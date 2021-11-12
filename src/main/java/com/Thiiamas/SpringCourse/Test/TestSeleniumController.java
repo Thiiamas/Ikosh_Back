@@ -16,12 +16,12 @@ import java.time.format.FormatStyle;
 import java.util.Date;
 
 @RestController
-@RequestMapping(path = "api/test")
-public class TestController {
+@RequestMapping(path = "api/testSelenium")
+public class TestSeleniumController {
     private TestService testService;
 
     @Autowired
-    public TestController(TestService testService){
+    public TestSeleniumController(TestService testService){
         this.testService = testService;
     }
 
