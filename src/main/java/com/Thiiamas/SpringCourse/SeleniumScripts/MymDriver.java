@@ -1,4 +1,4 @@
-package com.Thiiamas.SpringCourse.Test;
+package com.Thiiamas.SpringCourse.SeleniumScripts;
 import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.Toolkit;

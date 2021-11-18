@@ -3,6 +3,8 @@ package com.Thiiamas.SpringCourse.Controllers;
 import com.Thiiamas.SpringCourse.Models.ERole;
 import com.Thiiamas.SpringCourse.Models.Role;
 import com.Thiiamas.SpringCourse.Models.User;
+import com.Thiiamas.SpringCourse.Models.UserAccount;
+import com.Thiiamas.SpringCourse.Payload.Request.AccountDetailsRequest;
 import com.Thiiamas.SpringCourse.Payload.Request.LoginRequest;
 import com.Thiiamas.SpringCourse.Payload.Request.SignupRequest;
 import com.Thiiamas.SpringCourse.Payload.Response.JwtResponse;
@@ -66,7 +68,6 @@ public class AuthController {
 
     @PostMapping("/signup")
     public ResponseEntity<?> registerUser(@Valid @RequestBody SignupRequest signupRequest){
-        System.out.println("HERE");
         if(userRepository.existsByUsername(signupRequest.getUsername())){
             return ResponseEntity.badRequest().body(
                     new MessageResponse("Error : Username already taken")

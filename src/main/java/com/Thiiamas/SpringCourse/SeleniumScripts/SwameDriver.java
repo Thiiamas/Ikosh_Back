@@ -1,4 +1,4 @@
-package com.Thiiamas.SpringCourse.Test;
+package com.Thiiamas.SpringCourse.SeleniumScripts;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
